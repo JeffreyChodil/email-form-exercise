@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <h1>Contact Me</h1>
+    </header>
+    <main>
+        <!-- This will be a work-inquiry form for potential clients -->
+        <h2>How May I Help You?</h2>
+        <p>Thank you for you interest. Please use the following form to tell me about yourself.</p>
+        <!-- Form response to be emailed through formspree -->
+        <form action="https://formspree.io/jchodilpiano@gmail.com/" method="post">
+            <!-- Identifying Info -->
+            <div id="personal-info">
+                <!-- Get Name -->
+                <label for="name">Name:</label>
+                <input id="name" type="text" name="name" placeholder="Enter Name" required>
+                <!-- Get Email -->
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email" placeholder="Email Address" required>
+                <!-- Get Phone Number -->
+                <label for="phone">Phone:</label>
+                <input id="phone" type="text" name="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+                    placeholder="xxx-xxx-xxxx" />
+            </div>
+            <!-- Get Message -->
+            <div id="message">
+                <label for="message">Message:</label>
+                <textarea id="message" rows=5 name="message"
+                    placeholder="Describe your business inquiry here..."></textarea>
+            </div>
+            <!-- Submit and Reset -->
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+
+        </form>
+    </main>
+</body>
+</html>
