@@ -1,0 +1,38 @@
+html {
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+body {
+    background-color: #FFFFF0;
+    margin: 0;    
+}
+
+header {
+    border-style: solid;
+    text-align: center;
+}
+
+main {
+    margin: 0 5%;
+    padding: 10px 20px;
+}
+
+main h2, main p {
+    text-align: center;
+}
+
+form input, form textarea{
+    width: 100%;
+    margin-bottom: 20px;    
+}
+
+.personal-info {
+    display: flex;
+    flex-direction: column;    
+}
+
+@media all and (min-width: 600px) {
+    form div {
+        display: flex;
+    }    
+}
